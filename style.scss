@@ -49,6 +49,8 @@ main{
         article{
             display: flex;
             justify-content: space-between;
+            border-bottom:1px solid #999;
+            // 左右両セクション共通部品
             .section-title{
                 padding-bottom: 8px;
                 // margin-bottom: 18px;
@@ -64,15 +66,41 @@ main{
                     margin-top: 18px;
                     margin-bottom: 30px;
                 }
+                .box{
+                    width:calc(100%/4);
+                    p{
+                        margin-top: 15px;
+                    }
+                }
             }
             .whatsnew{
                 width: 270px;
+                .container{
+                    height:232px;
+                    overflow:scroll;
+                    .box{
+                        padding:{
+                            top:20px;
+                            bottom:20px;
+                        }
+                        border:{
+                            bottom:1px solid #999;
+                        }
+                        a{
+                            color:#09c;
+                        }
+                        time{
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
         }
     }
-
-
-
-
-
+}
+.footer{
+    text-align: right;
+    padding:{
+         top: 10px;
+        }
 }
