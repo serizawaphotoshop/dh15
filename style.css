@@ -1,0 +1,82 @@
+ul, li, p, h1, h2, body, figure {
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 12px;
+}
+
+#wrapper {
+  width: 950px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 57px;
+  padding-bottom: 39px;
+}
+
+.header .searchbox {
+  width: 150px;
+  height: 26px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .nav li {
+  margin-bottom: 22px;
+}
+
+main .right article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .right article .section-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #999;
+}
+
+main .right article .recommended {
+  width: 470px;
+}
+
+main .right article .recommended .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .right article .recommended p {
+  margin-top: 18px;
+  margin-bottom: 30px;
+}
+
+main .right article .whatsnew {
+  width: 270px;
+}
+/*# sourceMappingURL=style.css.map */

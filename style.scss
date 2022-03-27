@@ -1,0 +1,78 @@
+// cssリセット
+%reset{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+    @extend %reset;
+    list-style-type: none;
+}
+p,h1,h2,body,figure{
+    @extend %reset;
+}
+//全体
+p{
+    font-size: 12px;
+}
+#wrapper{
+    width: 950px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+// ヘッダ
+.header{
+    display: flex;
+    justify-content: space-between;
+    // ↓プロパティのネストを試してみたが、エラーが出る。動作はする
+    padding:{
+        top:57px;
+        bottom:39px;
+    }
+    .searchbox{
+            width: 150px;
+            height: 26px;
+        
+    }
+}
+// メインコンテンツ
+main{
+    display: flex;
+    justify-content: space-between;
+    .nav{
+        li{
+            margin:{
+                bottom:22px;
+            }
+        }
+    }
+    .right{
+        article{
+            display: flex;
+            justify-content: space-between;
+            .section-title{
+                padding-bottom: 8px;
+                // margin-bottom: 18px;
+                border-bottom:1px solid #999;
+            }
+            // 左右各2セクション
+            .recommended{
+                width: 470px;
+                .container{
+                    display:flex;
+                }
+                p{
+                    margin-top: 18px;
+                    margin-bottom: 30px;
+                }
+            }
+            .whatsnew{
+                width: 270px;
+            }
+        }
+    }
+
+
+
+
+
+}
