@@ -70,6 +70,9 @@ main .right article .recommended .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .right article .recommended p {
@@ -106,6 +109,26 @@ main .right article .whatsnew .container .box a {
 
 main .right article .whatsnew .container .box time {
   font-size: 12px;
+}
+
+main .right article .item {
+  width: 790px;
+}
+
+main .right article .item .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .right article .item p {
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .footer {
