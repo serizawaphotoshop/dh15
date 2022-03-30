@@ -113,6 +113,11 @@ main{
                 p{
                     @include section_p($bottom:18px);
                 }
+                .box{
+                    p{
+                        @include section_p(0px,50px)
+                    }
+                }
             }
         }
     }

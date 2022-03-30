@@ -131,6 +131,11 @@ main .right article .item p {
   margin-bottom: 18px;
 }
 
+main .right article .item .box p {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
 .footer {
   text-align: right;
   padding-top: 10px;
